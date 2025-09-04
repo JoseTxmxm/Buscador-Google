@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<style>
+    #foo {
+        padding: 100px;
+        text-align: center;
+    }
+
+    #foo2 {
+        padding: 8px;
+        margin: 2%;
+        color: white;
+        background-color: blueviolet;
+        font-size: 20px;
+        border-radius: 10px;
+    }
+
+    #foo3 {
+        padding: 1%;
+    }
+
+    #foo4 {
+        text-align: right;
+        margin: 3%;
+        padding: auto;
+    }
+
+    #input {
+        width: 600px;
+        height: 50px;
+        border-radius: 15px;
+        text-align: center;
+        font-size: 18px;
+        margin-top: 3%;
+    }
+
+</style>
+    <head>
+        <meta charset="utf-8">
+        <Title>Buscar imagen</Title>
+    </head>
+    <nav id="foo4">
+        <a id="#" type="submit" href="/index.html""><button>Home</button></a>
+        <a id="#" type="submit" href="/advanced-search.html"><button>Búsqueda avanzada</button></a>
+    </nav>
+    
+    
+    <body>
+        <ul>
+            <div id="foo">
+                <li>
+                    <image src="/media/camara.png"/>
+                </li>
+                <li id="#">
+                <image src="/media/google_logo.svg"/>
+                </li>
+                <form action="https://www.google.com/search" method="get">
+                    <input type="hidden" name="tbm" value="isch" />
+                    <input id="input" type="search" name="q" placeholder="Buscar imagen o url de imagen" />
+                    <li>
+                        <button id="foo2" type="submit">Buscar</button>
+                    </li>
+                </form>
+            </div>
+        </ul>
+        <div style="text-align: center;">
+        </div>
+    </body>
+</html>

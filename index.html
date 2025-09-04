@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<style>
+    #foo {
+        padding: 100px;
+        text-align: center;
+    }
+
+    #foo2 {
+        padding: 8px;
+        margin: 2%;
+        color: white;
+        background-color: blueviolet;
+        border-radius: 10px;
+        font-size: 18px;
+    }
+
+    #foo3 {
+        padding: 1%;
+    }
+
+    #foo4 {
+        text-align: right;
+        margin: 3%;
+        padding: auto;
+        font-size: 15px;
+        border-radius: 15px;
+    }
+
+    #input {
+        width: 600px;
+        height: 50px;
+        border-radius: 15px;
+        text-align: center;
+        font-size: 20px;
+    }
+
+    #image {
+        margin-bottom: 3%;
+    }
+
+</style>
+    <head>
+        <meta charset="utf-8">
+        <Title>Home</Title>
+    </head>
+    <nav id="foo4">
+        <a id="#" type="submit" href="/index.html""><button>Home</button></a>
+        <a id="#" type="submit" href="/search-images.html"><button>Buscar imágenes</button></a>
+        <a id="#" type="submit" href="/advanced-search.html"><button>Búsqueda avanzada</button></a>
+    </nav>
+    
+    
+    <body>
+        <ul>
+            <div id="foo">
+                <li id="#">
+                <image id="image" src="/media/google_logo.svg"/>
+                </li>
+                <form action="https://www.google.com/search" method="get">
+                    <input id="input" type="search" name="q" placeholder="Escriba algo para buscar o URL" />
+                    <li>
+                        <button id="foo2" type="submit">Buscar</button>
+                    </li>
+                </form>
+                <hr>
+                <h3>Escriba algo en el siguiente campo para redirigirlo a al primer resultado...</h3>
+                <form style="margin-top: 3%;"  action="https://www.google.com/search" method="get">
+                    <input type="hidden" name="btnI" value="1" />
+                    <input id="input" type="search" name="q" placeholder="Escriba algo para buscar o URL" />
+                    <li>
+                        <button id="foo2">Me siento afortunado !!!</button>
+                    </li>
+                </form>
+            </div>
+        </ul>
+        <div style="text-align: center;">
+        </div>
+    </body>
+</html>

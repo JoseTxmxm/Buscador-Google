@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+    <style>
+    #foo {
+        padding: 100px;
+        text-align: center;
+    }
+
+    #foo2 {
+        padding: 8px;
+        margin: 2%;
+        color: white;
+        background-color: blueviolet;
+        border-radius: 10px;
+        font-size: 20px;
+    }
+
+    #foo3 {
+        padding: 1%;
+    }
+
+    #foo4 {
+        text-align: right;
+        margin: 3%;
+        padding: auto;
+    }
+
+    #input {
+        width: 600px;
+        height: 50px;
+        border-radius: 15px;
+        text-align: center;
+        margin-top: 3%;
+        font-size: 18px;
+    }
+
+    #image {
+        margin-bottom: 3%;
+    }
+
+</style>
+    <head>
+        <meta charset="utf-8">
+        <Title>Busqueda avanzada</Title>
+    </head>
+    <nav id="foo4">
+        <a id="#" type="submit" href="/index.html""><button>Home</button></a>
+        <a id="#" type="submit" href="/search-images.html"><button>Buscar imágenes</button></a>
+    </nav>
+
+    <body>
+        <ul>
+            <div id="foo">
+                <li id="#">
+                <image src="/media/google_logo.svg"/>
+                </li>
+                <form action="https://www.google.com/search" method="get">
+                    <h3 style="text-align: center; margin-bottom: 3%;">Estás en las búsquedas avanzadas</h3>
+                    <input id="input" list="searches" name="q" placeholder="Elija una opción y escriba lo que busca" />
+                    <datalist id="searches">
+                        <option value="solo esta palabra: ">
+                        <option value="todas estas palabras: ">
+                        <option value="esta palabra o frase exacta: ">
+                        <option value="cualquiera de estas palabras: ">
+                        <option value="ninguna de estas palabras: ">
+                        <option value="solo este nombre: ">
+                        <option value="todos esto nombres: ">
+                        <option value="excepto estos nombres: ">
+                    </datalist>
+                    <li>
+                        <button id="foo2" type="submit">Buscar</button>
+                    </li>
+                </form>
+            </div>
+        </ul>
+        <div style="text-align: center;">
+        </div>
+    </body>
+
+</html>
